@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #7C3AED;
+    --UTD-color: #BF5700;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
     --node-color: #3c873a;
@@ -133,6 +134,11 @@ hr {
 .hero .hero-heading .heading-inverted {
     color: var(--primary-color);
 }
+
+.hero .hero-heading .heading-inverted_new {
+    color: var(--UTD-color);
+}
+
 
 /** sections **/
 
