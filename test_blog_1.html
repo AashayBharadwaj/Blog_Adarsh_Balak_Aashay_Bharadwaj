@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Aashay Bharadwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Aashay Bharadwaj</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <!-- <a class="link" href="/blogs.html">Blogs</a> -->
+                <a class="link" href="/">Blogs</a>
+            </li>
+            </ul>
+    </nav>
+
+
+<header class="hero">
+        <img class="hero-img" src="images/hero_1.svg" />
+        <h2 class="hero-heading">
+            <!-- Hi, I'm <span class="heading-inverted">Aashay</span> -->
+            <!-- <br>I'm currently pursuing an  M.S. degree in Management Science from the <br><span class="heading-inverted_new"> University of Texas at Dallas.</span>
+            <br>    I'm aspiring to be an 
+            <span class="heading-inverted"> Analyst. </span>          -->
+            <!-- as I believe the potential that  -->
+            <!-- <br>data analytics holds in the digital world that we're entering. -->
+            </h2>
+</header>
+
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1 style="color: var(--primary-color)">SQL</h1>
+            <p>      
+                 SQL is a powerful programming language for managing and manipulating data stored in relational databases. 
+                    In this blog post, we'll take a closer look at some of the intermediate 
+                    SQL techniques for filtering, aggregating, sorting, and grouping data.
+                    <br><br><b>Filtering Data</b>
+                    <br>
+                    The WHERE clause in SQL allows you to filter rows from a query based on specific conditions. 
+                    <br>For example, suppose we have a table of customer data with columns for id, name, and state. 
+                    We can use the WHERE clause to retrieve only the rows for customers who live in a particular state:
+            
+                </p>
+              
+            </div>
+    </section>
+    
+
+    <section class="section">
+        <div class="container container-center ">
+            <h1 class="hero-heading" style="color: #6B7280">Query</h1>
+            <p style="color:#6B7280" class="hero-heading"> 
+                
+                <b>SELECT * FROM customers WHERE state = 'CA';
+                </b>
+                    
+            </p>
+           
+        </div>
+    </section>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <!-- <h1 style="color: var(--primary-color)">Projects</h1> -->
+            <p>
+                The above query will return the customers with state as CA.
+                <br>
+                <br>The following query will return all rows from the customers table where the state column is equal to 'CA'. 
+                You can also use comparison operators such as <, >, <=, >=, and <> to specify more complex conditions. 
+                For example, the following query will return rows where the id column is greater than 10:</p>
+            <!-- <a class="link link-primary" href="/projects.html">See Projects</a> -->
+
+        </div>
+    </section>
+
+    <section class="section ">
+        <div style="color:#6B7280" class="container container-center">
+            <h1 >Query</h1>
+            <p><b>SELECT * FROM customers <br>WHERE id > 10</b>
+            </p>
+            <!-- <a class="link link-secondary" href="/blogs.html">Read Blogs</a> -->
+            <!-- <a class="link link-secondary" href="/">Read Blogs</a> -->
+        </div>
+    </section>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <!-- <h1 style="color: var(--primary-color)">Projects</h1> -->
+            <p>
+                <br><b>Aggregate Functions</b>
+<br><br>
+SQL provides a number of built-in functions for performing calculations on data. 
+<br>These are known as aggregate functions, and they include functions such as SUM, AVG, MIN, and MAX. 
+<br>Aggregate functions are typically used in conjunction with the GROUP BY clause to calculate values for each group.
+<br><br>
+For example, suppose we have a table of orders with columns for order_id, product, and quantity. 
+We can use the SUM function to calculate the total quantity of each product sold:
+
+        </div>
+    </section>
+
+    <section class="section ">
+        <div style="color:#6B7280" class="container container-center">
+            <h1 >Query</h1>
+            <p><b>SELECT product, SUM(quantity) <br>FROM orders <br>GROUP BY product;
+            </b>
+            </p>
+            <!-- <a class="link link-secondary" href="/blogs.html">Read Blogs</a> -->
+            <!-- <a class="link link-secondary" href="/">Read Blogs</a> -->
+        </div>
+    </section>
+
+    <section class="section ow">
+        <div class="container container-center">
+            <!-- <h1 style="color: var(--primary-color)">Projects</h1> -->
+            <p>
+                This query will return a list of products and the total quantity sold for each product. 
+                Other common aggregate functions include AVG (average), MIN (minimum), and MAX (maximum).
+
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+
+        <br>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AashayBharadwaj">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.facebook.com/aashay.bharadwaj">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=https://www.linkedin.com/in/aashay-bhaardwaj-4a587b173/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+                       
+        </ul>
+    </footer>
+
+</body>
+</html>
