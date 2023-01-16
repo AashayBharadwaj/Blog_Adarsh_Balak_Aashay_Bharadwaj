@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Aashay Bharadwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Aashay Bharadwaj</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+               
+                <a class="link link-active" href="/">Blogs</a>
+            </li>
+            </ul>
+    </nav>
+
+
+<header class="hero">
+        <img class="hero-img" src="images/SpreadSheets_1.jpg" />
+        <h2 class="hero-heading">
+           
+            </h2>
+</header>
+
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1 style="color: var(--primary-color)">Index:</h1>
+            <p>      
+                <b></b> 
+                <br>
+<ul>
+    <li>
+        First function - ROUND
+    </li>
+    <li>
+        Function composition - SQRT
+    </li>
+    <li>
+        Functions and ranges - MIN, MAX
+    </li>
+    <li>    
+    Selecting ranges - SUM, AVERAGE, MEDIAN
+    </li>
+    <li>
+        Multiple arguments - RANK
+    </li>
+    <li>
+        Even more arguments - RANK
+    </li>
+    <li>
+        String manipulation - LEFT, RIGHT
+    </li>
+    <li>
+        
+    String information - LEN, SEARCH
+    </li>
+    <li>
+        Combining strings - CONCATENATE
+    </li>
+    <li>
+        Date functions - WEEKDAY
+    </li>
+    <li>    
+    Comparing dates
+    </li>
+    <li>
+        
+    Combining functions
+    </li>
+
+
+</ul>
+
+                   
+                </p>              
+            </div>
+    </section>
+    
+
+    <section class="section">
+        <div class="container container-center ">
+            <h1 class="hero-heading" style="color: #6B7280">Functions</h1>
+            <!-- <p style="color:#6B7280" class="hero-heading">  -->
+                
+                <!-- <b> -->
+
+                    <b>1)Round off a number.</b>
+                    <br>
+ROUND(Value,places)
+<br>
+Function: Used to round off the value in a cell.
+<br>Arguments:
+Value is the actual value to be rounded off.
+Places is the number of decimals to round off to.
+
+
+<br><br>
+<b>2)Square root of a number</b><br>
+SQRT(Value)
+<br>Function:Used to get the square root of the number
+<br>Arguments: 
+Value is the actual number to be square rooted.
+
+<br><br>
+<b>3)Round off the square root of a number</b> 
+<br>ROUND(SQRT)
+<br>Function: To Round off the square root of a number.
+<br>Arguments of Round:
+<br>Value: SQRT of the number is this case
+<br>Places: Number of decimals to be rounded off to.
+<br>Arguments of SQRT:
+<br>Value to be square rooted.
+
+<br><br><b>4)Minimum and Maximum of either 2 numbers or n numbers.</b>
+<br>
+OR
+<br>Minimum and Maximum of a range of numbers.
+
+<br><br>UseCase 1:
+<br>Min(Value1,Value2,Value3,...valuen)
+Max(Value1,Value2,Value3,..valuen)
+This will give you the min or max value between the entered values
+
+<br><br>UseCase 2:
+<br>Min(CellM:CellN)
+Max(CellM:CellN)
+This will give the min or max of the values from a given range of values.
+<br><br>
+
+<b>5)Ranking your data points.</b>
+
+<br>Rank(Value, Range,Is_Ascending)
+<br>Function: Used to rank the data against a given range of values.
+<br>Arguments:
+<br>Value:Value to be ranked
+<br>Range/Data: Value to be ranked on the range of data
+<br>Is_Ascending: If set to 1 it will rank the data in an ascending order else Descending order
+<br>Important note:
+<br>We need to use the absolute reference here and not the regular one.
+<br>Regular: =RANK(B2, B2:B13)
+<br>Absolute=RANK(B2, $B$2:$B$13)
+This is because in the regular reference the end of the range (B13) is getting incremented 
+and hence giving an unintended result.
+
+<header class="hero">
+    <img class="hero-img" src="images/Ranking_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<b>6)Conditional IF statement</b>
+<br>
+Function: Used to write an if statement.
+<br>IF(Logical_expression,Value_if_true,Value_if_False)
+<br>Arguments:
+<br>Logical expression: Condition to be tested
+<br>Value_if_true: If the condition is true then the value to be given out
+<br>Value_if_false: This is the value to be given for the else part
+<br>
+<br>
+
+<b>7)String Manipulation:</b>
+<ul>
+    <li>
+LEFT(string, [number_of_characters]): selects the leftmost part of a string. The number of characters selected is defined in the optional argument number_of_characters, and defaults to 1.
+<br><br>RIGHT(string, [number_of_characters]): selects the rightmost part of a string. The number of characters selected is defined in the optional argument number_of_characters, and defaults to 1.
+String information - LEN, SEARCH<br>
+<br>
+    </li>
+    <li>
+LEN(text): evaluates to the number of characters of text. E.g. =LEN("Cell") would evaluate to 4.
+<br><br>SEARCH(search_for, text_to_search): searches for search_for in text_to_search:
+<br><br>search_for: the string to look for
+<br><br>text_to_search: the string to look in
+SEARCH evaluates to a number, the location in the string where search_for appears, with 1 being the first character. 
+<br>E.g. =SEARCH("e", "test test") would evaluate to 2, because the first "e" appears as the second character.
+<br><br>Use len, search left, right to find the first name last name of the director.
+</li> 
+</ul>
+
+<header class="hero">
+    <img class="hero-img" src="images/Surname.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+        <i><b>You can also do it in one go using:
+            = RIGHT(C2, LEN(C2) - SEARCH(" ", C2))
+            </b>
+            </i>
+</header>
+
+
+<br>
+<b>
+    8)Combining strings - CONCATENATE
+</b>
+<br>
+How to combine strings using the CONCATENATE function:
+<br>
+CONCATENATE(string1, [string2, ...]): combines one or more strings into a single string. 
+<br>E.g. =CONCATENATE("foo", " ", "bar") evaluates to foo bar.
+
+<header class="hero">
+    <img class="hero-img" src="images/Concatenate.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<b>9)Date functions - WEEKDAY</b>
+<br>
+Some functions are used to get specific information or do operations on dates. One example of such a function is WEEKDAY:
+WEEKDAY(date, [type]): evaluates to the day of the week of a date. type is 1, 2 or 3.
+<br><br>type = 1: Sunday is day 1 and Saturday is day 7 (default)
+<br>type = 2: Monday is day 1 and Sunday is day 7
+<br>type = 3: Monday is day 0 and Sunday is day 6
+<br><br>For example, using =WEEKDAY(A1, 2) (where A1 contains the date 2019-01-01) would evaluate to 2, because January 1st 2019 fell on a Tuesday and setting type to 2 sets Monday at 1.
+
+<header class="hero">
+    <img class="hero-img" src="images/Date_Functions.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<b>10)Comparing dates</b>
+<br>
+Sometimes you might need to compare certain dates to each other, or to the current date. There are some useful functions for that in Google Sheets as well:
+<br>DATEDIF(start_date, end_date, unit): calculates the time difference between two dates. The difference will be calculated between start_date and end_date. The end_date must take place after the start_date. A third argument here is the unit, this can be:
+<br>"Y": the number of years between two dates
+<br>"M": the number of months between two dates
+<br>"D": the number of days between two dates
+<br><br>A full list can be found here
+NOW(): a function without arguments, evaluates to the current time
+<br>For example, =DATEDIF("2018-01-01", "2018-01-03", "D") would evaluate to 2.
+
+<header class="hero">
+    <img class="hero-img" src="images/Date_Diff.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<i><b>SOURCE: DATACAMP course on spreadsheets</b></i>
+
+
+                <!-- </b> -->
+                    
+            </p>
+           
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+
+        <br>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AashayBharadwaj">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.facebook.com/aashay.bharadwaj">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=https://www.linkedin.com/in/aashay-bhaardwaj-4a587b173/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+                       
+        </ul>
+    </footer>
+
+</body>
+</html>
