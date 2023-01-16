@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Aashay Bharadwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Aashay Bharadwaj</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+               
+                <a class="link link-active" href="/">Blogs</a>
+            </li>
+            </ul>
+    </nav>
+
+
+<header class="hero">
+        <img class="hero-img" src="images/Excel_Interm.svg" />
+        <h2 class="hero-heading">
+           
+            </h2>
+</header>
+
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1 style="color: var(--primary-color)">Index:</h1>
+            <p>      
+                <b></b> 
+                <br>
+<ul>
+    <li>
+        Flow control IF
+    </li>
+    <li>
+        Nested IF
+    </li>
+    <li>
+        Combination of Logical statements IF and OR
+    </li>
+    <li>    
+        Conditional aggregation
+    </li>
+    <li>
+        Conditional SUMIF
+
+    </li>
+    <li>
+        Conditional Average
+
+    </li>
+    <li>
+        VLOOKUP
+    </li>
+    <li>
+        
+        HLOOKUP
+    </li>
+    
+
+</ul>
+
+                   
+                </p>              
+            </div>
+    </section>
+    
+
+    <section class="section">
+        <div class="container container-center ">
+            <h1 class="hero-heading" style="color: #6B7280">Functions</h1>
+            <!-- <p style="color:#6B7280" class="hero-heading">  -->
+                
+                <!-- <b> -->
+
+                    <b>1)Flow control - IF
+                    </b>
+                    <br>
+                    These are functions that use a certain logical value 
+                    as one of their arguments and evaluate according to that value.
+<br><br>
+IF(logical_expression, value_if_true, value_if_false): depending on the logical_expression, 
+return value_if_true when its result is TRUE, return value_if_false otherwise.
+
+<br><br>
+<b>2)Nested logical functions - IF
+</b><br>
+To understand this, you can think of IF functions as parts of a decision tree.
+<br>
+In each splitting of the tree, you follow a path depending on the value of a logical expression. 
+If the expression is TRUE, you follow one branch, if it is FALSE you follow the other.
+When you nest IF statements, you're just following along the branches of the decision tree. Visually this looks as follows:
+<header class="hero">
+    <img class="hero-img" src="images/NestedIf_Visuals.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+
+        <img class="hero-img" src="images/Nested_IF_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<br><br>
+<b>3)Combining logical values - OR, WEEKDAY
+</b> 
+<br>OR(logical_expression1, [logical_expression2, ...]): 
+this is the logical operator that returns TRUE if one of the expressions is TRUE and FALSE if and only if all of them are FALSE.
+<br>For example, we can determine whether a cell (e.g. A2) is equal to 21 or 22 by using the following formula: =OR(A2 = 21, A2 = 22).
+
+<br>WEEKDAY(date, [type]): evaluates to the day of the week of a date. type is 1, 2 or 3.
+<br>
+<br>type = 1: Sunday is day 1 and Saturday is day 7 (default)
+<br>type = 2: Monday is day 1 and Sunday is day 7
+
+<br>type = 3: Monday is day 0 and Sunday is day 6
+<br><br>
+
+<b>4)Conditional counting - COUNTIF</b>
+
+<br>COUNTIF(range, criterion): count the number of times the criterion is met in the specified range.
+
+<br>range: the source data that is used. Typically, you'll need to use an absolute reference for this one.
+<br>criterion: a pattern to check for. It can be as simple as a string you want to match on. 
+<br>For example: "good".
+<br>For example: if A1:A3 contains "good", "bad", "bad", then = COUNTIF(A1:A3, "bad") evaluates to 2
+
+
+<header class="hero">
+    <img class="hero-img" src="images/Countif_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<b>5)Conditional aggregation - COUNTIF
+</b>
+<br>
+COUNTIF(range, criterion): count the number of times the criterion is met in the specified range.
+
+<br>Range: the source data that is used. Typically, you'll need to use an absolute reference for this one.
+<br>criterion: a pattern to check for. It can be as simple as a string you want to match on, e.g. "Dylan". 
+You'll see more complex criterions in later exercises.
+<br><br>For example if A1:A3 holds "Arun", "Dylan", "Dylan", then = COUNTIF(A1:A3, "Dylan") evaluates to 2.
+
+
+<br>
+<br>
+<b>6)Conditional sum - SUMIF:</b>
+<br>SUMIF(range, criterion, sum_range): evaluates to the conditional sum across a range.
+<br>Range: the range on which the criterion will be checked
+<br>Criterion: the pattern that will be checked, e.g. "Dylan"
+<br>Sum_range: the range of values that will be summed up
+<br>
+<br>For example if A1:A3 holds "Arun", "Dylan", "Dylan" and B1:B3 has 3, 4, 8, then = SUMIF(A1:A3, "Dylan", B1:B3) evaluates to 12.
+
+
+
+
+
+<header class="hero">
+    <img class="hero-img" src="images/Conditional_SUMIF.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+        <b><i>We are using reference arguements and not absolutes.</i></b>
+</header>
+
+
+<br>
+<b>
+    7)Conditional average - AVERAGEIF
+</b>
+<br>
+Another interesting statistic you can calculate grouped per all the categories is the average.
+
+<br>
+You're going to be using AVERAGEIF:
+<br>AVERAGEIF(range, criterion, average_range): evaluates to the conditional average across a range.
+<br>range: the range on which the criterion will be checked
+<br>criterion: the pattern that will be checked, e.g. "Dylan"
+<br>average_range: the range of values that will be summed up
+<br><br>
+For example if A1:A3 holds "Arun", "Dylan", "Dylan" and B1:B3 has 3, 4, 8, then = AVERAGEIF(A1:A3, "Dylan", B1:B3) evaluates to 6.
+
+
+
+
+<header class="hero">
+    <img class="hero-img" src="images/Average_if_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<b>8)Automating the lookup - VLOOKUP
+</b>
+<br>
+VLOOKUP(search_key, range, index, is_sorted): look for a match in the leftmost column of a lookup table and return the value in a certain column:
+<br>search_key: the value to search for
+<br>range: the lookup table, without the headers. You typically use an absolute reference for this.
+<br>index: the column number of the value to be returned, where the first column in range is numbered 1
+<br>is_sorted: should be FALSE for now
+<br>
+<br>
+You can compare it to the process of looking through a phone book. 
+The search_key would be the name of the person you want the phone number of. 
+The range is the data in the book, with the names in the leftmost column. 
+Finally, the index is the number of the column where you find what you need, the phone number.
+
+
+<header class="hero">
+    <img class="hero-img" src="images/VLOOKUP_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<b>9)HLOOKUP</b>
+<br>
+Although way less common, it can be useful to do a lookup through horizontally organized data. 
+<br>HLOOKUP(search_key, range, index, is_sorted): similar to VLOOKUP but in a horizontal fashion. 
+The key will be looked for in the uppermost row, and index now refers to the row number.
+<br>You're now going to use the last argument, is_sorted. If set to TRUE (default), the function assumes that the values in range are sorted. When this is the case, the match doesn't have to be exact, but HLOOKUP will look for the closest match less than or equal to search_key. If search_key is FALSE, an exact match is required.
+<br><br>For example, =HLOOKUP(0.57, $C$29:$H$30, 2, TRUE) would evaluate to E in the given spreadsheet, as the closest match less than or equal to 0.57 is 0.33.
+
+<header class="hero">
+    <img class="hero-img" src="images/HLOOKUP_example.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<i><b>SOURCE: DATACAMP course on spreadsheets</b></i>
+
+
+        
+            </p>
+           
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+
+        <br>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AashayBharadwaj">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.facebook.com/aashay.bharadwaj">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=https://www.linkedin.com/in/aashay-bhaardwaj-4a587b173/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+                       
+        </ul>
+    </footer>
+
+</body>
+</html>
