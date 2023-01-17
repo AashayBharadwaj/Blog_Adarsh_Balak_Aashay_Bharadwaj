@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Aashay Bharadwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Aashay Bharadwaj</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+               
+                <a class="link link-active" href="/">Blogs</a>
+            </li>
+            </ul>
+    </nav>
+
+
+<header class="hero">
+        <img class="hero-img" src="images/SpreadSheets_1.jpg" />
+        <h2 class="hero-heading">
+           
+            </h2>
+</header>
+
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1 style="color: var(--primary-color)">Index:</h1>
+            <p>      
+                <b></b> 
+                <br>
+<ul>
+    <li>
+        What is a Macro in Excel?
+    </li>
+    <li>
+        A sample macro.
+    </li>
+    <li>
+        Steps involved in making a macro.
+    </li>
+    <li>    
+    Different methods of running a macro.
+    </li>
+    <li>
+        Different methods of saving a macro.
+    </li>
+    <li>
+        How to access the codes in VBA?
+    </li>
+    <li>
+        IF statements in the VBA code.
+    </li>
+    <li>
+        
+   Using loops to automate the tasks.
+    </li>
+    <li>
+       Creating your own list of macros.
+    </li>
+   
+
+</ul>
+
+                   
+                </p>              
+            </div>
+    </section>
+    
+
+    <section class="section">
+        <div class="container container-center ">
+            <h1 class="hero-heading" style="color: #6B7280">Macros</h1>
+            <!-- <p style="color:#6B7280" class="hero-heading">  -->
+                
+                <!-- <b> -->
+
+                    <b>1)What is a Macro?</b>
+                    <br>
+                    An Excel macro is an action or a set of actions that can be recorded, named, 
+                    saved and executed as many times as required and whenever desired. 
+                    By using macros, we are able to automate repetitive tasks associated 
+                    with data manipulation and data reporting that must be accomplished repeatedly.
+<br>
+
+
+
+<br><br>
+<b>2)Example of a simple macro</b><br>
+Formatting an order that is not fulfilled yet.
+<br>The format steps: 
+<br>1)Highlight
+<br>2)Bold
+<br>3)Italics
+<br>4)Underlined
+<br>5)Fill a colour
+
+<header class="hero">
+    <img class="hero-img" src="images/Using_Absolute_Reference.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<br><br>
+<b>3)How do you record a macro?</b> 
+
+<br>>Go to the View Ribbon.
+<br>>Select record macro.
+<br>>Give your macro a name(you cannot have any spaces for this)
+<br>>Define a shortcut key(Keep this as something that you don’t normally use.
+<br>>Give a description(This can come handy when you’re dealing with more than one macro)
+<br>>Press ok
+(Perform your desired action)
+<br>>Select the row
+<br>>Bolden it
+<br>>Make it italic
+<br>>Underline it
+<br>>Fill color
+<br>>Stop recording the macro after this
+<header class="hero">
+    <img class="hero-img" src="images/Where_to_record_the_macro.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<br><br><b>4)How to run a macro?</b>
+<br>
+
+<b><br>>Method one:</b>
+<br>First clear the formatting on the row.
+<br>>After this go to view macros
+<br>>Double click your macro
+<br>>Or hit run
+<br>
+<br>
+<b>>Method two:</b>
+<br>	>First clear your macro.
+<br>	>Hit the shortcut key that you defined.
+<br><br>	
+<b>>Method three:</b>
+<br>	>First clear your macro
+<br>	>Now you can also assign your macro to an icon or an image
+<br>	>Simply right click on it and assign a macro.
+
+
+
+
+
+<br><br>
+
+<b>5)Absolute vs relative reference in macros</b>
+<br>What we did so far was an absolute reference macro and what that means is that every time we ran the macro it ran the formatting on the same sheet.
+
+<br>>To use this on different rows you need to use a relative reference.
+<br>>To do this you need to first clear all the formatting.
+<br>>Delete your macro(this is optional)
+<br>>Select a cell
+<br>>Go to view and select use relative reference at the bottom
+<br>>Go to recording a macro and use the usual steps.
+
+<br>This time when you run your macro it’ll run for wherever you have your cell selected.
+
+
+<header class="hero">
+    <img class="hero-img" src="images/Running_a_macro_using_relative_reference.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+
+
+
+
+
+<b>6)How to read the VBA?</b>
+<br>
+Everything between the sub and the end sub is your code.
+The part in green are the comments so they do not affect the code.
+Most parts after this are simply the actions that you record.
+<br>
+<br>For example, 
+Selecting Cells,making it bold,Italic and finally filling the color.
+(NOTE: it says activecell.range(“A1:E1”).Select
+This means that it is using a reference to your selected cell with the top most cell.
+You can modify the code in VBA as well.
+
+
+
+<header class="hero">
+    <img class="hero-img" src="images/How_to_Access_VBA.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+
+<i><b>SOURCE: DATACAMP course on spreadsheets</b></i>
+<br>
+<br>
+<i><b></b><a class="link link-active" href="/spreadsheets_part_2.html">Go to previous chapter</a></b></i>
+
+
+
+
+        
+            </p>
+           
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+
+        <br>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AashayBharadwaj">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.facebook.com/aashay.bharadwaj">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=https://www.linkedin.com/in/aashay-bhaardwaj-4a587b173/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+                       
+        </ul>
+    </footer>
+
+</body>
+</html>
