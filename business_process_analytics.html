@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Aashay Bharadwaj</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Aashay Bharadwaj</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link " href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/projects.html">Projects</a>
+            </li>
+            <li class="list-item-inline">
+               
+                <a class="link link-active" href="/">Blogs</a>
+            </li>
+            </ul>
+    </nav>
+
+
+<header class="hero">
+        <img class="hero-img" src="" />
+        <h2 class="hero-heading">
+           
+            </h2>
+</header>
+
+
+    <section class="section ow">
+        <div class="container container-center">
+            <h1 style="color: var(--primary-color)">Index:</h1>
+            <p>      
+                <b></b> 
+                <br>
+<ul>
+    
+   
+
+    <li>
+        Introduction(Business Process Analytics)
+    </li>
+    <li>
+        Event data
+    </li>
+    <li>
+        Process analysis workflow
+    </li>
+    <li>    
+        Different perspectives after analysis
+    </li>
+    <li>
+        Exploring activities using bupaR
+    </li>
+    <li>
+        Exploring the sequence of activities
+    </li>
+    <li>
+        Process maps
+    </li>
+    <li>
+        
+        Components of process data
+    </li>
+    <li>
+        Different perspectives after analysis
+    </li>
+    <li>
+        Organizational analysis
+    </li>
+    <li>    
+        Control flow analysis
+    </li>
+    <li>
+        
+        Performance analysis
+    </li>
+    <li>Visualizing different analysis</li>
+<li>Linking different perspectives</li>
+<li>Filtering the data</li>
+<li>Types of aggregation</li>
+
+</ul>
+
+                   
+                </p>              
+            </div>
+    </section>
+    
+
+    <section class="section">
+        <div class="container container-center ">
+            <h1 class="hero-heading" style="color: #6B7280">Business Process Analytics</h1>
+            <!-- <p style="color:#6B7280" class="hero-heading">  -->
+                
+                <!-- <b> -->
+
+                    <b>1)Introduction</b>
+                    <br>
+                    Efficient processes are one of the main components of successful organizations in the 21st century.
+                    As enormous amounts of process related data are stored everywhere, the possibility to analyze and improve processes gave rise to the field called <b>"process mining".</b>
+                     It is aimed at discovering useful insights from process data.
+                    
+
+<br><br>
+<b>2)Event data</b><br>
+With the emergence of the Internet of Things, a lot of things around us are recording data about events that happen over time. 
+<br>As a result, the types of event data you can analyze is literally infinite. 
+<br>In this course you will learn about the different components of event data, and how to 
+<br>>Create 
+<br>>Preprocess  
+<br>>Analyze 
+<br>the event data.
+
+<header class="hero">
+    <img class="hero-img" src="images/Event_data.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+Event data consists of three basic components: 
+<br><b>>the why,</b> 
+<br><b>>the what </b>
+<br><b>>and the who.</b>
+<br>an event is  a recorded action of an activity (the what) occurring for an instance (the why) by a specific resource (the who).
+
+
+
+
+<br><br>
+<b>3)Process analysis workflow</b>
+<br>Analyzing event data is an iterative process of three steps: 
+<br><b>extraction,</b> 
+<br><b>processing </b>
+<br><b>and analysis.</b>
+<header class="hero">
+    <img class="hero-img" src="images/Process_Analysis_Workflow.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+
+<br><br><b>4)Different perspectives after analysis</b>
+
+<br>
+Three perspectives can be distinguished. 
+<br>Firstly, the <b>organizational</b> perspective focuses on the actors. 
+<br>Secondly, the <b>control-flow</b> perspective, focusses on the flow and structuredness of the process. 
+<br>Finally, the <b>performance</b> perspective, focusses on time and efficiency. 
+<br>Furthermore, we can also combine different perspectives, for example investigate whether there are links between actors and performance issues. 
+Additional data attributes which are available, such as the cost of activities or types of customers, can also be included.
+
+<header class="hero">
+    <img class="hero-img" src="images/Different_perspectives.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<br><br>
+
+<b>5)Exploring the sequence of activities</b>
+
+<br>The sequence in which the activities occurs is called the trace of the case.
+<br>A list of the traces can be retrieved with the `traces` function, or they can be visualized using the `trace_explorer`.
+<br>For student 1, we see a very structured path, progressing through the different exercises, and finally doing the assessment. 
+<br>However, student 2 starts with looking at the theory pages, before doing exercise 1, which he executes two times in a row. 
+
+<header class="hero">
+    <img class="hero-img" src="images/Sequence_of_activities.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+<b>6)Process maps</b>
+<br>
+<br>Another way to visualize processes is by constructing a process map.
+<br>A process map is a directed graph that shows the activities of the process and the flows between them.
+<br>The colors of the nodes and the thickness of the arrows indicate the most frequent activities and process flows.
+<br>
+<br>
+
+<b>7)Different components of process data:</b>
+<ul>
+    <li>
+<b>1.Events</b>
+<br><br>If we take a closer look at the X-Ray activity execution for John, we would see that it was scheduled during registration at 9:51. 
+It actually started at 10:42, and was finished at 10:58. Each of these time recordings is called an event. 
+<br>
+<header class="hero">
+    <img class="hero-img" src="images/components_events.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+<br>
+    </li>
+    <li>
+        <b>2.Event log</b>
+
+        <br><br>A log book of events is called an event log. 
+        <br>For our current example, the event log looks as shown here. 
+        <br>There are two registration instances, for which only a start event is recorded (the arrival of the patient), and there is 1 X-ray instance which consists of 3 events.
+        <header class="hero">
+            <img class="hero-img" src="images/Event_log.jpg" />
+            <h2 class="hero-heading">
+               
+                </h2>
+        </header>
+</li> 
+<li>
+    <b>3.Resources
+    </b>
+    
+    <br><br>Another component of process data are the resources.
+    <br> Resources are the actors in the process. 
+    <br>In our example, there are three resources: Mr. Owens and Mr. Fleming who performed the registration of John and Emily, respectively, and Dr. Russell who performed the X-ray. 
+    
+    <header class="hero">
+        <img class="hero-img" src="images/Resources.jpg" />
+        <h2 class="hero-heading">
+           
+            </h2>
+    </header>
+</li> 
+
+</ul>
+
+
+
+<br>
+<b>
+    8)Different perspectives after analysis
+</b>
+<br>
+<ul>
+    <li><b>Organizational Analysis</b></li>
+    <header class="hero">
+        <img class="hero-img" src="images/Organizational_analysis.jpg" />
+        <h2 class="hero-heading">
+           
+            </h2>
+    </header>
+    <br><b>Who</b> executes the work?
+<br>In order to know who executes the work, we can take a look at the resource labels, using the resource_labels function. 
+<br>We can see that there are 12 resources in this example process: doctors, nurses, clercks and an emergency crew.
+<br>
+<br>
+We can also create a resource-activity matrix which shows what resource in your organization performs what task.
+<header class="hero">
+    <img class="hero-img" src="images/Resource_activity_matrix.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+Specialization and Brain drain:
+<br>When a person performs relatively few activities, we can say that this person is specialized, like person 3 and 4 in this example. 
+<br>Knowing the specializations of your work-force is very important from a knowledge management perspective: knowing who to go to for a specific issue, or knowing who to enlist for specific trainings.
+<header class="hero">
+    <img class="hero-img" src="images/Specialization and brain drain.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+<br>On the other hand, it can also occur that only one person is in charge of a certain activity, like the forth activity in this example. 
+<br>This presents an important risk in terms of knowledge retention: if the person leaves the company, you might suffer an important loss of knowledge concerning this step of the process.
+
+<br>
+<br>
+    <li><b>Control-flow analysis</b></li>
+    The structuredness of the process.
+<br>When we look at structuredness, we often speak of "control-flow". 
+<br>Control-flow refers to the different successions of activities, like in the example we saw of the different students. 
+<br>Recall that each case can be expressed as a sequence of activities. 
+<br>Each unique sequence is called a trace or process variant.
+<br>There are several ways to look at the variants of the process. 
+On one hand, we have several metrics which we can use to look at one specific aspect of the process: 
+start and end activities, 
+the distribution of the case length, 
+which activities are always present in a case and 
+which are exceptional.
+<br>
+<br>
+There are various visual tools to look at control-flow patterns:
+<br>
+<br><b>Process map</b>  
+<header class="hero">
+    <img class="hero-img" src="images/Performance_Process_Map.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+<br><b>Trace explorer</b> 
+<header class="hero">
+    <img class="hero-img" src="images/Trace_explorer.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+<br><b>Precedence matrix.</b> 
+<header class="hero">
+    <img class="hero-img" src="images/Precedence_matrix.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+
+
+    <li><b>Performance analysis</b>
+    </li>
+</ul>
+
+
+
+
+<b>9)Linking different perspectives</b>
+<br>
+For each of these aspects, we used process metrics, which return various numeric results, as well as visuals, which return maps of the process as well as other process-specific graphs, like dotted charts. 
+While each of these aspects is important in its own right, it is also interesting to look at the links between them and between any additional information we have stored in our data. 
+<br><br>For example, is there a relation between the actors working on a case, and the order in which the work is done. How is the order in which the work is done related to the efficiency in terms of throughput time? Or are there differences in how different resources plan and execute their work in terms of time schedules? 
+
+<header class="hero">
+    <img class="hero-img" src="images/Linking_different_perespectives.jpg" />
+    <h2 class="hero-heading">
+       
+        </h2>
+</header>
+
+
+<i><b>SOURCE: DATACAMP course on business process analytics with R</b></i>
+<br>
+<br>
+<!-- <i><b></b><a class="link link-active" href="/spreadsheets_part_2.html">Go to next chapter</a></b></i> -->
+
+
+
+
+        
+            </p>
+           
+        </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-header">Social media presence</div>
+
+        <br>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/AashayBharadwaj">
+                    <i class="fa fa-github"></i>
+                </a>
+
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.facebook.com/aashay.bharadwaj">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href=https://www.linkedin.com/in/aashay-bhaardwaj-4a587b173/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+                       
+        </ul>
+    </footer>
+
+</body>
+</html>
